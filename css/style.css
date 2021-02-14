@@ -1,0 +1,128 @@
+/* Global styles  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Button */
+.btn {
+  border: none;
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Font size */
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+/* Utility classes */
+.pd-lg-around {
+  padding: 5rem;
+}
+
+/* Navigation */
+
+.main-header {
+  background: #131c27;
+  color: #fff;
+}
+
+.main-nav {
+  /* Set the min-height so it does not get smaller than this */
+  min-height: 10vh;
+  /* Added the min-height because the nav and hero section will take the 100vh in total */
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav__list {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+    url("../img/landing-page.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 58.25em) {
+  .main-nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
