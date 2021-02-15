@@ -239,6 +239,87 @@ h5 {
   padding: 0 2rem;
 }
 
+/* Contact form */
+.contact {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+    url("../img/contact-mountain.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  margin: auto;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.form-control-wrapper {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+.label {
+  margin: 0 1.5rem;
+}
+
+.btn-lg {
+  width: 100%;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+form :last-child {
+  margin-top: 7rem;
+}
+
+input {
+  padding: 1rem 3rem;
+  min-width: 70%;
+}
+
+/* Footer */
+.footer {
+  color: #fff;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer__wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+.footer__disclaimer {
+  flex: 1 1 40rem;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex: 1 1 40rem;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__item {
+  padding: 1rem;
+}
+
 /* Media Queries */
 @media (max-width: 58.25em) {
   .main-nav {
@@ -259,6 +340,16 @@ h5 {
     -webkit-text-fill-color: #fff;
     color: #fff;
     padding: 2rem;
+  }
+
+  .form-wrapper {
+    width: 80%;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer__disclaimer {
+    padding-bottom: 2rem;
   }
 }
 
