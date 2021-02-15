@@ -41,6 +41,10 @@ a {
   background: #27394e;
 }
 
+.bnt:focus {
+  background: #27394e;
+}
+
 /* Font size */
 h1 {
   font-size: 2.6rem;
@@ -99,6 +103,9 @@ h5 {
 .main-header {
   background: #131c27;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .main-nav {
@@ -118,6 +125,18 @@ h5 {
   flex: 1 1 40rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.main-nav__link {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+  padding-bottom: 0.5rem;
+}
+
+.main-nav__link:hover {
+  color: #a9d0ff;
+  border-bottom: 1px solid #a9d0ff;
 }
 
 #logo {
